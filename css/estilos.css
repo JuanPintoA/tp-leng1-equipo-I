@@ -1,1 +1,307 @@
+/* ================================================
+   VARIABLES  Paleta de colores y tipografia
+   ================================================ */
+:root {
+    --color-primario:    #2e7d52;
+    --color-secundario:  #1a2e22;
+    --color-acento:      #e07b39;
+    --color-fondo:       #f0f7f2;
+    --color-texto:       #1a2e22;
+    --color-texto-suave: #4a5e50;
+    --color-blanco:      #ffffff;
+    --fuente-principal:  'Gabriela', serif;
+}
 
+
+/* ================================================
+   RESET BASICO
+   ================================================ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ================================================
+   BODY: Tipografi­a y fondo general
+   ================================================ */
+body {
+    font-family: var(--fuente-principal);
+    font-size: 16px;
+    line-height: 1.7;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+
+/* ================================================
+   HEADINGS: Jerarqui­a tipografica
+   ================================================ */
+h1 {
+    font-size: 2.2rem;
+    color: var(--color-blanco);
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: var(--color-primario);
+    margin-bottom: 12px;
+    border-bottom: 2px solid var(--color-acento);
+    padding-bottom: 6px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: var(--color-secundario);
+    margin-bottom: 8px;
+}
+
+
+/* ================================================
+   HEADER
+   ================================================ */
+header {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    padding: 30px 40px;
+    text-align: center;
+}
+
+
+/* ================================================
+   NAVEGACION
+   ================================================ */
+nav {
+    margin-top: 16px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 6px 14px;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    background-color: var(--color-blanco);
+    color: var(--color-primario);
+}
+
+
+/* ================================================
+   MAIN: Contenedor principal
+   ================================================ */
+main {
+    padding: 32px 0;
+}
+
+
+/* ================================================
+   SECCIONES
+   ================================================ */
+section {
+    background-color: var(--color-blanco);
+    border-left: 5px solid var(--color-primario);
+    padding: 28px 32px;
+    margin-bottom: 28px;
+}
+
+section p {
+    color: var(--color-texto-suave);
+    margin-bottom: 10px;
+}
+
+
+/* ================================================
+   LISTAS ul y ol
+   ================================================ */
+section ul,
+section ol {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+section ul li,
+section ol li {
+    margin-bottom: 8px;
+    color: var(--color-texto-suave);
+}
+
+section ul li strong,
+section ol li strong {
+    color: var(--color-secundario);
+}
+
+
+/* ================================================
+   LISTA DE DEFINICIONES dl, dt, dd
+   ================================================ */
+dl {
+    margin-top: 10px;
+}
+
+dt {
+    font-weight: bold;
+    color: var(--color-primario);
+    margin-top: 12px;
+    text-transform: uppercase;
+    font-size: 0.88rem;
+    letter-spacing: 0.5px;
+}
+
+dd {
+    color: var(--color-texto-suave);
+    margin-left: 20px;
+    margin-top: 4px;
+}
+
+
+/* ================================================
+   ENLACES GENERALES
+   ================================================ */
+a {
+    color: var(--color-primario);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-acento);
+    text-decoration: underline;
+}
+
+
+/* ================================================
+   IMAGENES
+   ================================================ */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 16px 0;
+}
+
+
+/* ================================================
+   TABLA (para paginas que la usen)
+   ================================================ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    font-size: 0.97rem;
+}
+
+table thead {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+}
+
+table th,
+table td {
+    padding: 12px 16px;
+    border: 1px solid #c8dece;
+    text-align: left;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #e8f3ec;
+}
+
+table tbody tr:hover {
+    background-color: #d4eadb;
+}
+
+
+/* ================================================
+   FORMULARIO (para contacto.html)
+   ================================================ */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    color: var(--color-secundario);
+    margin-top: 16px;
+    margin-bottom: 6px;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #a0bfa8;
+    border-radius: 4px;
+    font-family: var(--fuente-principal);
+    font-size: 1rem;
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: var(--color-primario);
+}
+
+form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 12px 28px;
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    border: none;
+    border-radius: 4px;
+    font-family: var(--fuente-principal);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--color-secundario);
+}
+
+
+/* ================================================
+   FOOTER
+   ================================================ */
+footer {
+    background-color: var(--color-secundario);
+    color: var(--color-fondo);
+    text-align: center;
+    padding: 24px 20px;
+    font-size: 0.9rem;
+    line-height: 1.9;
+    margin-top: 40px;
+}
+
+footer a {
+    color: var(--color-acento);
+}
+
+footer a:hover {
+    color: var(--color-blanco);
+}
