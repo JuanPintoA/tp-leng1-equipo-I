@@ -3,9 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Contacto | Patitas Felices</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <h2>Aca van nuestros contactos</h2>
+
+    <header>
+        <h1>Contacto</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="programas.html">Programas</a></li>
+                <li><a href="contacto.html" class="activo">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Información de contacto -->
+        <section id="info-contacto">
+            <h2>¿Dónde encontrarnos?</h2>
+            <p>Podés comunicarte con nosotros por cualquiera de estos medios. 
+               ¡Respondemos a la brevedad!</p>
+
+            <ul>
+                <li>
+                    📍 <strong>Dirección:</strong> Av. Siempreviva 742, San Miguel, Buenos Aires
+                </li>
+                <li>
+                    📞 <strong>Teléfono:</strong> 
+                    <a href="tel:+541145678901">+54 11 4567-8901</a>
+                </li>
+                <li>
+                    📧 <strong>Email:</strong> 
+                    <a href="mailto:contacto@patitasfelices.org">contacto@patitasfelices.org</a>
+                </li>
+                <li>
+                    🕐 <strong>Horario de atención:</strong> Lunes a viernes de 10:00 a 18:00 hs
+                </li>
+            </ul>
+        </section>
+
+        <!-- Redes sociales -->
+        <section id="redes">
+            <h2>Seguinos en redes</h2>
+            <p>Encontrá noticias, animales en adopción y novedades de nuestros programas:</p>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/patitasfelices" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        📸 Instagram — @patitasfelices
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/patitasfelicesong" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        👍 Facebook — Patitas Felices ONG
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/patitasfelices" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        🐦 Twitter/X — @patitasfelices
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Enlace interno a formulario -->
+        <section id="cta-formulario">
+            <h2>¿Tenés una consulta?</h2>
+            <p>
+                Completá el <a href="#formulario">formulario de contacto</a> 
+                que está más abajo y te respondemos dentro de las 48 horas hábiles.
+            </p>
+            <p>
+                Si querés sumarte como voluntario o conocer nuestros programas, 
+                revisá la <a href="programas.html">página de programas</a>.
+            </p>
+        </section>
+
+        <!-- Formulario -->
+        <section id="formulario">
+            <h2>Formulario de Contacto</h2>
+            <p>Todos los campos marcados con <strong>*</strong> son obligatorios.</p>
+
+            <form action="#" method="post">
+
+                <label for="nombre">Nombre completo *</label>
+                <input 
+                    type="text" 
+                    id="nombre" 
+                    name="nombre" 
+                    placeholder="Ej: María González"
+                    required>
+
+                <label for="email">Correo electrónico *</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="Ej: maria@email.com"
+                    required>
+
+                <label for="telefono">Teléfono (opcional)</label>
+                <input 
+                    type="tel" 
+                    id="telefono" 
+                    name="telefono" 
+                    placeholder="Ej: +54 11 1234-5678">
+
+                <label for="motivo">Motivo de contacto *</label>
+                <select id="motivo" name="motivo" required>
+                    <option value="">-- Seleccioná una opción --</option>
+                    <option value="adopcion">Quiero adoptar</option>
+                    <option value="transito">Quiero ser hogar de tránsito</option>
+                    <option value="voluntariado">Quiero ser voluntario/a</option>
+                    <option value="donacion">Quiero hacer una donación</option>
+                    <option value="castracion">Consulta sobre castración</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <label for="mensaje">Mensaje *</label>
+                <textarea 
+                    id="mensaje" 
+                    name="mensaje" 
+                    placeholder="Escribí tu consulta acá..."
+                    required></textarea>
+
+                <button type="submit">Enviar mensaje</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>📍 Av. Siempreviva 742, San Miguel, Buenos Aires</p>
+        <p>📧 <a href="mailto:contacto@patitasfelices.org">contacto@patitasfelices.org</a></p>
+        <p>&copy; 2026 Patitas Felices ONG - UNAHUR</p>
+    </footer>
+
 </body>
 </html>
