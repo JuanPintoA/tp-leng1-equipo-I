@@ -3,52 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patitas Felices | Inicio</title>
+    <title>Inicio | Patitas Felices</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-
+ 
     <header>
         <h1>Patitas Felices</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html" class="activo">Inicio</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="programas.html">Programas</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
-
+ 
     <main>
-
-        <section id="hero">
+ 
+        <!-- Presentación de la ONG -->
+        <section id="bienvenida">
             <h2>Bienvenidos a Patitas Felices</h2>
-            <p>Rescatando amor y encontrando hogares responsables en Buenos Aires.</p>
-
-            <a href="#resumen">Leer más sobre nuestra labor</a>
-
-            <br><br>
-
-            <img src="https://picsum.photos/id/237/400/250" alt="Perro rescatado feliz">
-            <img src="https://picsum.photos/id/1062/400/250" alt="Gato rescatado descansando">
-        </section>
-
-        <section id="resumen">
-            <h2>Nuestra labor diaria</h2>
             <p>
-                En Patitas Felices nos dedicamos a transformar la realidad de los animales callejeros 
-                a través del rescate y la concientización.
+                Somos una organización sin fines de lucro dedicada al rescate, rehabilitación 
+                y adopción de animales en situación de calle en el área metropolitana de 
+                Buenos Aires. Desde 2015 trabajamos junto a voluntarios, veterinarios y 
+                familias comprometidas para mejorar la vida de los animales más vulnerables.
             </p>
-            <a href="programas.html">Ver nuestros programas</a>
+            <p>
+                Creemos que cada animal merece una segunda oportunidad. 
+                <a href="nosotros.html">Conocé nuestra historia</a> y los valores que nos mueven.
+            </p>
+ 
+            <img src="img/patitasfelices.jpeg" alt="Voluntarios de Patitas Felices en medio de una adopcion">
         </section>
-
+ 
+        <!-- Misión -->
+        <section id="mision">
+            <h2>Nuestra Misión</h2>
+            <p>
+                Trabajar activamente para reducir la superpoblación de animales en situación 
+                de calle a través de la castración, el rescate responsable y la concientización 
+                comunitaria, promoviendo el vínculo positivo entre las personas y los animales.
+            </p>
+ 
+            <img src="img/mision.jpeg" alt="Animal castrado en una jornada de castración gratuita">
+        </section>
+ 
+        <!-- Resumen de programas -->
+        <section id="programas-resumen">
+            <h2>¿Qué hacemos?</h2>
+            <p>Llevamos adelante cuatro programas principales:</p>
+            <ul>
+                <li><strong>Rescate y Rehabilitación:</strong> Intervenimos ante emergencias en la vía pública y alojamos animales en hogares de tránsito.</li>
+                <li><strong>Castración Responsable:</strong> Organizamos jornadas gratuitas para familias de bajos recursos.</li>
+                <li><strong>Adopción Consciente:</strong> Conectamos animales rescatados con familias evaluadas y comprometidas.</li>
+                <li><strong>Educación y Concientización:</strong> Damos charlas en escuelas y espacios comunitarios sobre tenencia responsable.</li>
+            </ul>
+            <p>
+                <a href="programas.html">Ver todos nuestros programas</a>
+            </p>
+        </section>
+ 
+        <!-- Cómo ayudar -->
+        <section id="como-ayudar">
+            <h2>¿Cómo podés ayudar?</h2>
+            <p>Hay muchas formas de sumarte a la causa, desde donde estés:</p>
+            <ol>
+                <li><strong>Adoptá</strong> un animal rescatado y dale un hogar definitivo.</li>
+                <li><strong>Sé hogar de tránsito</strong> y recibí temporalmente a un animal en recuperación.</li>
+                <li><strong>Volunteate</strong> en nuestras jornadas de rescate o castración.</li>
+                <li><strong>Donà</strong> insumos veterinarios, alimento o dinero para cubrir gastos médicos.</li>
+                <li><strong>Compartí</strong> nuestras publicaciones en redes para llegar a más personas.</li>
+            </ol>
+            <p>
+                ¿Querés participar? <a href="contacto.html">Contactate con nosotros</a>.
+            </p>
+        </section>
+ 
+        <!-- Datos rápidos -->
+        <section id="datos-rapidos">
+            <h2>Patitas Felices en números</h2>
+            <dl>
+                <dt>Año de fundación</dt>
+                <dd>2015</dd>
+                <dt>Animales rescatados</dt>
+                <dd>Más de 1.200 desde nuestros inicios</dd>
+                <dt>Adopciones concretadas</dt>
+                <dd>Más de 900 hogares felices</dd>
+                <dt>Voluntarios activos</dt>
+                <dd>Aproximadamente 60 personas</dd>
+                <dt>Zona de trabajo</dt>
+                <dd>San Miguel, Moreno, José C. Paz y alrededores</dd>
+            </dl>
+        </section>
+ 
+        <!-- Enlace externo -->
+        <section id="recursos">
+            <h2>Recursos útiles</h2>
+            <p>Te compartimos algunos organismos y recursos relacionados al bienestar animal:</p>
+            <ul>
+                <li>
+                    <a href="https://www.argentina.gob.ar/ambiente/fauna" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        Dirección de Fauna y Flora — Gobierno de Argentina
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.who.int/es/news-room/fact-sheets/detail/animal-bites" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        Organización Mundial de la Salud — Tenencia responsable de animales
+                    </a>
+                </li>
+            </ul>
+        </section>
+ 
     </main>
-
+ 
     <footer>
-        <p>📍 Av. Siempreviva 742, Buenos Aires</p>
-        <p>✉ contacto@patitasfelices.org</p>
+        <p>📍 Av. Siempreviva 742, San Miguel, Buenos Aires</p>
+        <p>📧 <a href="mailto:contacto@patitasfelices.org">contacto@patitasfelices.org</a></p>
         <p>&copy; 2026 Patitas Felices ONG - UNAHUR</p>
     </footer>
-
+ 
 </body>
 </html>
