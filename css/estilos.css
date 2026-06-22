@@ -305,3 +305,31 @@ footer a {
 footer a:hover {
     color: var(--color-blanco);
 }
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 2rem 1rem;
+}
+
+
+.btn-primary {
+  font-family: 'Gabriela', serif; 
+  background-color: #028090; 
+  border-color: #028090;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #E8611A; 
+  border-color: #E8611A;
+}
